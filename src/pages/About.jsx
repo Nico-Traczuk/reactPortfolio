@@ -3,39 +3,35 @@ import '../styles/style.css'
 import { Container, Typography, Grid, Paper } from '@mui/material';
 function About() {
     return(
-        <div>
-             <Container sx={{ py: 8 }}>
-                <Typography variant="h4" gutterBottom>
+        <div class="flex flex-col px-10 bg-white py-6 gap-5 items-center">
+            <div>
+                <Typography variant="h4" gutterBottom sx={{textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '3px'}}>
                     Sobre mí
                 </Typography>
-                <Grid container spacing={4}>
-                    <Grid item xs={12} md={6}>
-                        <Typography variant="body1">
-                            Soy un Desarrollador Full Stack con una fuerte orientación al Frontend. Durante los últimos dos años, he trabajado con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>Vue.js</strong>, además de utilizar <strong>Tailwind CSS</strong> como mi herramienta principal para el diseño y la estilización de interfaces.
-                        </Typography>
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <Typography variant="body1">
-                        En el Backend, he adquirido experiencia con <strong>Python</strong> y <strong>Django</strong>, junto con conocimientos en bases de datos relacionales. Mi enfoque principal es crear aplicaciones web modernas, eficientes y con una experiencia de usuario excepcional.
-                        </Typography>
-                    </Grid>
-                </Grid>
-                
-                    <Grid  py={4} >
-                        <Grid>
-                            <Typography variant="h4">
-                                Motivacion y objetivos
-                            </Typography>
-                            <Typography >
-                            Lo que más me motiva es seguir aprendiendo y creciendo como profesional. Me encanta enfrentar nuevos desafíos y estar preparado para brindar soluciones efectivas en cualquier situación.
-                            </Typography>
-                            <Typography variant="body1">
-                            Mi objetivo es seguir profundizando en el desarrollo Frontend mientras amplío mis habilidades en el Backend para convertirme en un desarrollador más completo y versátil.
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                
-            </Container>
+            </div>
+            <div class="flex gap-5" >
+                <Typography sx={{width: '50%'}}>
+                    Soy un Desarrollador Full Stack con una fuerte orientación al Frontend. Durante los últimos dos años, he trabajado con tecnologías como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>Vue.js</strong>, además de utilizar <strong>Tailwind CSS</strong> como mi herramienta principal para el diseño y la estilización de interfaces.
+                </Typography>
+
+                <Typography  sx={{width: '50%'}}>
+                    En el Backend, he adquirido experiencia con <strong>Python</strong> y <strong>Django</strong>, junto con conocimientos en bases de datos relacionales. Mi enfoque principal es crear aplicaciones web modernas, eficientes y con una experiencia de usuario excepcional.
+                </Typography>
+            </div>
+            <div>
+                <Typography variant="h4" sx={{textTransform: 'uppercase', fontWeight: 'bold', letterSpacing: '3px'}}>
+                    Motivacion y objetivos
+                </Typography>
+            </div>
+            <div class="flex">
+                <Typography  sx={{width: '50%'}}>
+                    Lo que más me motiva es seguir aprendiendo y creciendo como profesional. Me encanta enfrentar nuevos desafíos y estar preparado para brindar soluciones efectivas en cualquier situación.
+                </Typography>
+            
+                <Typography sx={{width: '50%'}}>
+                    Mi objetivo es seguir profundizando en el desarrollo Frontend mientras amplío mis habilidades en el Backend para convertirme en un desarrollador más completo y versátil.
+                </Typography>
+            </div>
         </div>
     );
 }
