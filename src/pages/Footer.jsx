@@ -4,9 +4,9 @@ import { Box, Typography } from '@mui/material';
 function Footer() {
     return(
         <div>
-            <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 4, textAlign: 'center' }}>
+            <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 1, textAlign: 'center' }}>
                 <Typography variant="body1">
-                    © 2023 [Tu Nombre]. Todos los derechos reservados.
+                    © 2025 Nicolas Traczuk. Todos los derechos reservados.
                 </Typography>
             </Box>
         </div>

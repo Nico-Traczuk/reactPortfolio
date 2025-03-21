@@ -47,9 +47,33 @@ const projects = [
 function Projects() {
   return (
     <Container sx={{ py: 8, color: 'white' }}>
-        <Typography variant="h4" gutterBottom sx={{textTransform: 'uppercase', letterSpacing: '3px'}}>
-          Proyectos
-        </Typography>
+            <Box sx={{ mb: 4, textAlign: "center" }}>
+                    <Typography
+                        variant="h4"
+                        sx={{
+                            textTransform: "uppercase",
+                            fontWeight: "bold",
+                            letterSpacing: "3px",
+                            position: "relative",
+                            display: "inline-block",
+                            "&::after": {
+                                content: '""',
+                                position: "absolute",
+                                left: 0,
+                                bottom: "-5px",
+                                width: "0%",
+                                height: "3px",
+                                backgroundColor: "#0077b5", // Cambia el color aquí
+                                transition: "width 0.3s ease-in-out",
+                            },
+                            "&:hover::after": {
+                                width: "100%",
+                            },
+                        }}
+                    >
+                        Proyectos
+                    </Typography>
+                </Box>
 
       <Grid container spacing={4}>
         {projects.map((project, index) => (
